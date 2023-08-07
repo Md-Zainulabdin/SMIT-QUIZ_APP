@@ -15,7 +15,7 @@ export const getData = () => {
 
 export const setData = async ({ username, email, password }) => {
     let users = getData();
-    let isFound = verifyEmail(email);
+    let isFound = Boolean(verifyEmail(email));
 
     if (isFound) {
         console.log("User already exists");

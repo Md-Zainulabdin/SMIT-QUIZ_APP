@@ -4,8 +4,9 @@ import Link from "next/link";
 import { useState } from "react";
 import { RiEyeLine, RiEyeOffLine } from "react-icons/ri";
 import { FcGoogle } from "react-icons/fc";
+import { signIn } from "next-auth/react";
 
-const Form = ({ signIn, onFormSubmit }) => {
+const Form = ({ login, onFormSubmit }) => {
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -22,7 +23,7 @@ const Form = ({ signIn, onFormSubmit }) => {
             <form action="#" onSubmit={onSubmithandler} className="flex flex-col gap-4">
 
                 {
-                    (!signIn) ?
+                    (!login) ?
 
                         (<div className="flex flex-col gap-2 relative">
                             <label htmlFor="Username" className="text-[--primary-color] text-lg text-left">Username :</label>
@@ -69,17 +70,19 @@ const Form = ({ signIn, onFormSubmit }) => {
 
                 {/* <div><span className="text-light text-red-500">Incorrect Password</span></div> */}
 
-                <div>{(signIn) ? <Link href={'/auth/signup'}><span>Don't have Account, Signup!</span></Link> : <Link href={'/auth/login'}><span>Already Have Account, Signin!</span></Link>}</div>
+                <div className="text-[--primary-color]">{(login) ? <Link href={'/auth/signup'}><span>Don't have Account, SignUp!</span></Link> : <Link href={'/auth/login'}><span>Already Have Account, SignIn!</span></Link>}</div>
 
                 <div >
-                    <button className={`${utils.hoverableBtn} mt-4 w-full`}>{(!signIn) ? "Create Account" : "Login"}</button>
+                    <button className={`${utils.hoverableBtn} mt-4 w-full`}>{(!login) ? "Create Account" : "Login"}</button>
                 </div>
             </form>
 
-            <div>{`OR ${(!signIn) ? 'SIGN UP' : 'SIGN IN'} WITH`}</div>
+            <div className="w-full text-center text-sm relative">
+               {`OR ${(!login) ? 'SIGN UP' : 'SIGN IN'} WITH`}
+            </div>
 
             <div >
-                <button className="w-full flex gap-3 items-center border p-3 justify-center">
+                <button className="w-full flex gap-3 items-center border p-3 justify-center" onClick={() => signIn("google")}>
                     <span className="text-lg font-medium text-[--primary-black]">Login with</span>
                     <FcGoogle className="text-2xl"/>
                 </button>
