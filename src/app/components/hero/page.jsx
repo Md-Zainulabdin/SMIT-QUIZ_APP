@@ -8,7 +8,7 @@ const Hero = () => {
                 <h1 className="text-6xl font-medium text-[--primary-black] raleway">Saylani Mass IT Training Program</h1>
                 <p className="text-md text-center leading-7 text-[#777]">Saylani Mass IT Training program is an institute who delivers latest IT education (FREE OF COST). Saylani Mass Training Department is one of the department which is running under Saylani Welfare Trust Management.</p>
                 <div className="mt-6">
-                    <button className="border-2 px-8 py-3 text-[--primary-color] transtion duration-300 ease-in-out hover:text-white hover:bg-[--primary-color] hover:border-[--primary-color]">Start Your Exam</button>
+                    <button className={`${utils.hoverableBtn}`}>Start Your Exam</button>
                 </div>
             </div>
         </div>
