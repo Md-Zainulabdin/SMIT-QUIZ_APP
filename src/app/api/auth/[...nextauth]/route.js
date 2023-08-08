@@ -6,6 +6,9 @@ import GoogleProvider from "next-auth/providers/google";
 // Authentication options
 
 export const authOptions = {
+    
+    secret: process.env.NEXTAUTH_SECRET,
+
     session: {
         strategy: "jwt"
     },

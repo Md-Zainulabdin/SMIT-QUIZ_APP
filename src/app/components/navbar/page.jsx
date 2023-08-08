@@ -5,7 +5,7 @@ import { signOut, useSession } from "next-auth/react";
 const Navbar = () => {
 
     const {data: session, status} = useSession();
-    console.log(session);
+    // console.log(session);
 
     return (
         <div className="w-full">
@@ -14,7 +14,7 @@ const Navbar = () => {
                     <Link href={'/'}><img src="/smit.png" alt="smit logo" className="w-[90px]"/></Link>
                 </div>
                 <div className="menu flex gap-8 items-center">
-                    {(status === 'authenticated') ? <Link href={'/'} className="text-xl font-medium">Profile</Link> : null}
+                    {(status === 'authenticated') ? <Link href={'/profile'} className="text-xl font-medium">Profile</Link> : null}
                     {(status === 'unauthenticated') ? <Link href={'/auth/login'} className="text-xl font-medium text-[--primary-color] border px-6 py-2">Login</Link> : null}
                     {(status === 'authenticated') ? <button onClick={() => signOut()} className="text-xl font-medium text-[--primary-color] border px-6 py-2">Logout</button> : null}
                 </div>

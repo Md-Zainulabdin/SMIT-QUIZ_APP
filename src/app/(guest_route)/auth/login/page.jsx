@@ -8,7 +8,7 @@ const LoginForm = () => {
         const data = await signIn("credentials", { redirect: false, email, password });
 
         if (data.ok && data.error === null) {
-            alert("Sucessfully Login")
+            alert("Sucessfully Login");
         }
     }
 
