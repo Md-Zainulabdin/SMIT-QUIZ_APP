@@ -65,7 +65,7 @@ const Form = ({ login, onFormSubmit }) => {
                         className="border p-2 text-[#666] outline-0"
                         required
                     />
-                    <span className="absolute text-[--primary-color] right-6 top-12 text-xl cursor-pointer" onClick={() => setHide(!hide)}>{(hide) ? <RiEyeOffLine /> : <RiEyeLine />}</span>
+                    <span className="absolute text-[--primary-color] right-3 top-12 text-xl cursor-pointer" onClick={() => setHide(!hide)}>{(hide) ? <RiEyeOffLine /> : <RiEyeLine />}</span>
                 </div>
 
                 {/* <div><span className="text-light text-red-500">Incorrect Password</span></div> */}

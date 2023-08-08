@@ -14,7 +14,7 @@ const LoginForm = () => {
 
     return (
         <div className="w-full h-[100vh] customFlex">
-            <div className="w-[33%] h-[600px] p-8 shadow-md">
+            <div className="w-[80%] sm:w-[70%] md:w-[50%] lg:w-[40%] xl:w-[33%] h-[600px] p-8 shadow-md border-2">
                 <h1 className="text-4xl font-medium text-[--primary-color]">Login</h1>
                 <hr className="my-7"/>
                 <Form login={true} onFormSubmit={onsubmitHandler} />

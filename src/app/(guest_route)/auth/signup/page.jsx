@@ -30,9 +30,13 @@ const SignUpForm = () => {
 
     return (
         <div className="w-full h-[100vh] customFlex">
-            <div className="w-[70%] h-[700px] shadow-md flex">
-                <div className="w-[50%] h-full border-r"></div>
-                <div className="w-[50%] h-full px-8 customFlex flex-col gap-8">
+            <div className="w-[80%] md:w-[70%] h-[700px] shadow-md flex border-2">
+                <div className="w-[0%] sm:w-[40%] md:w-[50%] h-full border-r">
+                    <div className="w-full h-full signUpGradient customFlex">
+                        <img src="/smit logo.png" alt="Saylani logo" className="w-[300px]" />
+                    </div>
+                </div>
+                <div className="w-full sm:w-[60%] md:w-[50%] h-full px-8 customFlex flex-col gap-8">
                     <div className="w-full text-left">
                         <h1 className="text-4xl font-semibold text-[--primary-color] mb-8">Sign Up</h1>
                         <hr />

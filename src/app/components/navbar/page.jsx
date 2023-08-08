@@ -5,6 +5,7 @@ import { signOut, useSession } from "next-auth/react";
 const Navbar = () => {
 
     const {data: session, status} = useSession();
+    console.log(session);
 
     return (
         <div className="w-full">
