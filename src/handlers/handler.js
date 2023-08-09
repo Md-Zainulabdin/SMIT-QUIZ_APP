@@ -48,3 +48,12 @@ export const verifyPassword = async (hashedPassword, password) => {
     let isFound = await compare(password, hashedPassword);
     return isFound;
 } 
+
+// Get Data to render Quiz
+
+const quizFilePath = path.join(process.cwd(), 'src', 'data', 'quiz.json');
+
+export const getQuizData = () => {
+    let data = JSON.parse(fs.readFileSync(quizFilePath));
+    return data;
+}

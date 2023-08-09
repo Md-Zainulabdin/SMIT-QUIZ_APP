@@ -3,9 +3,11 @@ import Navbar from "./components/navbar/page"
 
 const Home = () => {
   return (
-    <div className="w-full h-[90vh]">
-        <Navbar/>
-        <Hero/>
+    <div className="w-full h-full">
+      <Navbar />
+      <div className="py-4">
+        <Hero />
+      </div>
     </div>
   )
 }

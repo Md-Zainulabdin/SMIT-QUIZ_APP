@@ -1,0 +1,632 @@
+[
+    {
+        "id": 1,
+        "title": "html",
+        "html_questions": [
+            {
+                "question": "What does HTML stand for?",
+                "options": [
+                    "Hyper Text Markup Language",
+                    "Highly Textured Markup Language",
+                    "Hyperlink and Text Markup Language",
+                    "Home Tool Markup Language"
+                ],
+                "correct_answer": "Hyper Text Markup Language"
+            },
+            {
+                "question": "Which HTML tag is used to create a hyperlink?",
+                "options": [
+                    "<link>",
+                    "<a>",
+                    "<hyperlink>",
+                    "<url>"
+                ],
+                "correct_answer": "<a>"
+            },
+            {
+                "question": "Which HTML element is used for creating an unordered list?",
+                "options": [
+                    "<ol>",
+                    "<list>",
+                    "<ul>",
+                    "<li>"
+                ],
+                "correct_answer": "<ul>"
+            },
+            {
+                "question": "Which HTML tag is used to add an image to a webpage?",
+                "options": [
+                    "<img>",
+                    "<image>",
+                    "<picture>",
+                    "<photo>"
+                ],
+                "correct_answer": "<img>"
+            },
+            {
+                "question": "Which HTML element represents the top-level container of a webpage?",
+                "options": [
+                    "<body>",
+                    "<head>",
+                    "<html>",
+                    "<container>"
+                ],
+                "correct_answer": "<html>"
+            },
+            {
+                "question": "Which HTML tag is used to define a line break?",
+                "options": [
+                    "<lb>",
+                    "<break>",
+                    "<br>",
+                    "<newline>"
+                ],
+                "correct_answer": "<br>"
+            },
+            {
+                "question": "Which HTML element is used to emphasize text without any semantic importance?",
+                "options": [
+                    "<strong>",
+                    "<em>",
+                    "<italic>",
+                    "<highlight>"
+                ],
+                "correct_answer": "<em>"
+            },
+            {
+                "question": "Which HTML tag is used to define a table row?",
+                "options": [
+                    "<row>",
+                    "<tr>",
+                    "<line>",
+                    "<table-row>"
+                ],
+                "correct_answer": "<tr>"
+            },
+            {
+                "question": "Which attribute is used to provide an alternate text for images in HTML?",
+                "options": [
+                    "alt",
+                    "caption",
+                    "description",
+                    "text"
+                ],
+                "correct_answer": "alt"
+            },
+            {
+                "question": "Which HTML element is used to define the structure of an HTML document?",
+                "options": [
+                    "<format>",
+                    "<layout>",
+                    "<structure>",
+                    "<doctype>"
+                ],
+                "correct_answer": "<doctype>"
+            },
+            {
+                "question": "In HTML, which tag is used to create an ordered list?",
+                "options": [
+                    "<ol>",
+                    "<ul>",
+                    "<li>",
+                    "<list>"
+                ],
+                "correct_answer": "<ol>"
+            },
+            {
+                "question": "Which HTML attribute is used to specify the URL of the linked resource?",
+                "options": [
+                    "href",
+                    "src",
+                    "link",
+                    "url"
+                ],
+                "correct_answer": "href"
+            },
+            {
+                "question": "Which HTML tag is used to define a hyperlink?",
+                "options": [
+                    "<link>",
+                    "<a>",
+                    "<href>",
+                    "<url>"
+                ],
+                "correct_answer": "<a>"
+            },
+            {
+                "question": "What is the purpose of the HTML <head> element?",
+                "options": [
+                    "To display the main content of the webpage",
+                    "To define the structure of the webpage",
+                    "To provide metadata about the webpage",
+                    "To format the text on the webpage"
+                ],
+                "correct_answer": "To provide metadata about the webpage"
+            },
+            {
+                "question": "Which HTML element is used to create a clickable button?",
+                "options": [
+                    "<button>",
+                    "<input>",
+                    "<clickable>",
+                    "<submit>"
+                ],
+                "correct_answer": "<button>"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "CSS",
+        "css_questions": [
+            {
+                "question": "What does CSS stand for?",
+                "options": [
+                    "Creative Style Sheets",
+                    "Cascading Style Sheets",
+                    "Colorful Style Sheets",
+                    "Computer Style Sheets"
+                ],
+                "correct_answer": "Cascading Style Sheets"
+            },
+            {
+                "question": "Which CSS property is used to change the text color of an element?",
+                "options": [
+                    "text-color",
+                    "color",
+                    "font-color",
+                    "text-style"
+                ],
+                "correct_answer": "color"
+            },
+            {
+                "question": "How can you include an external CSS file in an HTML document?",
+                "options": [
+                    "<style src='styles.css'>",
+                    "<link rel='stylesheet' href='styles.css'>",
+                    "<css src='styles.css'>",
+                    "<import css='styles.css'>"
+                ],
+                "correct_answer": "<link rel='stylesheet' href='styles.css'>"
+            },
+            {
+                "question": "Which CSS property is used to add spacing between elements?",
+                "options": [
+                    "spacing",
+                    "margin",
+                    "padding",
+                    "border-spacing"
+                ],
+                "correct_answer": "margin"
+            },
+            {
+                "question": "What is the correct CSS syntax for selecting an element with the class 'highlight'?",
+                "options": [
+                    ".highlight",
+                    "#highlight",
+                    "<highlight>",
+                    "element.highlight"
+                ],
+                "correct_answer": ".highlight"
+            },
+            {
+                "question": "Which CSS property is used to change the background color of an element?",
+                "options": [
+                    "background-color",
+                    "color",
+                    "bgcolor",
+                    "background"
+                ],
+                "correct_answer": "background-color"
+            },
+            {
+                "question": "What is the purpose of the CSS 'float' property?",
+                "options": [
+                    "To make text float on water",
+                    "To align text to the left or right of its container",
+                    "To control the font size of text",
+                    "To create animation effects"
+                ],
+                "correct_answer": "To align text to the left or right of its container"
+            },
+            {
+                "question": "Which CSS property is used to control the space between the content and border of an element?",
+                "options": [
+                    "spacing",
+                    "margin",
+                    "padding",
+                    "border-spacing"
+                ],
+                "correct_answer": "padding"
+            },
+            {
+                "question": "What is the purpose of the CSS 'position' property?",
+                "options": [
+                    "To set the font style of an element",
+                    "To specify the position of an element in the layout",
+                    "To change the color of an element",
+                    "To add spacing around an element"
+                ],
+                "correct_answer": "To specify the position of an element in the layout"
+            },
+            {
+                "question": "Which CSS unit is relative to the font size of the element?",
+                "options": [
+                    "px",
+                    "em",
+                    "in",
+                    "%"
+                ],
+                "correct_answer": "em"
+            },
+            {
+                "question": "Which CSS property is used to control the order of flexible items in a flex container?",
+                "options": [
+                    "flex-order",
+                    "order",
+                    "flex-align",
+                    "item-order"
+                ],
+                "correct_answer": "order"
+            },
+            {
+                "question": "In CSS, which value is used with the 'position' property to position an element relative to its normal position?",
+                "options": [
+                    "fixed",
+                    "relative",
+                    "absolute",
+                    "static"
+                ],
+                "correct_answer": "absolute"
+            },
+            {
+                "question": "Which CSS property is used to create rounded corners on an element?",
+                "options": [
+                    "border-radius",
+                    "corner-radius",
+                    "rounded-style",
+                    "border-style"
+                ],
+                "correct_answer": "border-radius"
+            },
+            {
+                "question": "What is the CSS property used to control the space between lines of text?",
+                "options": [
+                    "line-spacing",
+                    "line-height",
+                    "text-spacing",
+                    "font-line"
+                ],
+                "correct_answer": "line-height"
+            },
+            {
+                "question": "Which CSS property is used to control the visibility of an element?",
+                "options": [
+                    "visible",
+                    "display",
+                    "visibility",
+                    "show"
+                ],
+                "correct_answer": "visibility"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "title": "JavaScript",
+        "javascript_questions": [
+            {
+                "question": "What does JavaScript do?",
+                "options": [
+                    "Styles the web page",
+                    "Defines the structure of the web page",
+                    "Adds interactivity to the web page",
+                    "Creates animations on the web page"
+                ],
+                "correct_answer": "Adds interactivity to the web page"
+            },
+            {
+                "question": "Which keyword is used to declare a variable in JavaScript?",
+                "options": [
+                    "var",
+                    "variable",
+                    "v",
+                    "let"
+                ],
+                "correct_answer": "var"
+            },
+            {
+                "question": "What symbol is used for single-line comments in JavaScript?",
+                "options": [
+                    "//",
+                    "/*",
+                    "--",
+                    "#"
+                ],
+                "correct_answer": "//"
+            },
+            {
+                "question": "Which built-in function can be used to display a dialog box with a message?",
+                "options": [
+                    "confirm()",
+                    "alert()",
+                    "prompt()",
+                    "display()"
+                ],
+                "correct_answer": "alert()"
+            },
+            {
+                "question": "Which operator is used to concatenate strings in JavaScript?",
+                "options": [
+                    "+",
+                    "-",
+                    "*",
+                    "&"
+                ],
+                "correct_answer": "+"
+            },
+            {
+                "question": "What is the result of `typeof null` in JavaScript?",
+                "options": [
+                    "null",
+                    "object",
+                    "undefined",
+                    "string"
+                ],
+                "correct_answer": "object"
+            },
+            {
+                "question": "Which method is used to add an element to the end of an array?",
+                "options": [
+                    "push()",
+                    "add()",
+                    "insert()",
+                    "append()"
+                ],
+                "correct_answer": "push()"
+            },
+            {
+                "question": "What does the '===' operator do in JavaScript?",
+                "options": [
+                    "Assigns a value to a variable",
+                    "Compares two values for equality without type conversion",
+                    "Checks if a variable is defined",
+                    "Performs a mathematical operation"
+                ],
+                "correct_answer": "Compares two values for equality without type conversion"
+            },
+            {
+                "question": "Which JavaScript keyword is used to declare a function?",
+                "options": [
+                    "method",
+                    "func",
+                    "function",
+                    "def"
+                ],
+                "correct_answer": "function"
+            },
+            {
+                "question": "What is the purpose of the 'return' statement in a JavaScript function?",
+                "options": [
+                    "To stop the execution of the function",
+                    "To define a new variable",
+                    "To specify the function's name",
+                    "To return a value from the function"
+                ],
+                "correct_answer": "To return a value from the function"
+            },
+            {
+                "question": "Which loop is used to iterate over the properties of an object?",
+                "options": [
+                    "for loop",
+                    "while loop",
+                    "do-while loop",
+                    "for...in loop"
+                ],
+                "correct_answer": "for...in loop"
+            },
+            {
+                "question": "What is the purpose of the 'addEventListener' method in JavaScript?",
+                "options": [
+                    "To add a new HTML element to the page",
+                    "To attach an event handler function to an HTML element",
+                    "To change the style of an HTML element",
+                    "To create a new function"
+                ],
+                "correct_answer": "To attach an event handler function to an HTML element"
+            },
+            {
+                "question": "Which global JavaScript function is used to convert a string to an integer?",
+                "options": [
+                    "parseInt()",
+                    "stringToInt()",
+                    "convertToInt()",
+                    "toInteger()"
+                ],
+                "correct_answer": "parseInt()"
+            },
+            {
+                "question": "What is the purpose of the 'setTimeout' function in JavaScript?",
+                "options": [
+                    "To add a delay before executing a function",
+                    "To stop the execution of a function",
+                    "To define a new variable",
+                    "To repeat a function at intervals"
+                ],
+                "correct_answer": "To add a delay before executing a function"
+            },
+            {
+                "question": "Which JavaScript method is used to remove the last element from an array?",
+                "options": [
+                    "remove()",
+                    "pop()",
+                    "delete()",
+                    "shift()"
+                ],
+                "correct_answer": "pop()"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "title": "React JS",
+        "react_questions": [
+            {
+                "question": "What is React.js?",
+                "options": [
+                    "A programming language",
+                    "A front-end framework",
+                    "A back-end framework",
+                    "A database management system"
+                ],
+                "correct_answer": "A front-end framework"
+            },
+            {
+                "question": "Which concept in React is responsible for rendering components based on their state?",
+                "options": [
+                    "Virtual DOM",
+                    "Component Lifecycle",
+                    "State",
+                    "Props"
+                ],
+                "correct_answer": "State"
+            },
+            {
+                "question": "In React, which component lifecycle method is called after a component has been rendered to the DOM?",
+                "options": [
+                    "componentDidMount",
+                    "componentWillUnmount",
+                    "componentWillUpdate",
+                    "rendered"
+                ],
+                "correct_answer": "componentDidMount"
+            },
+            {
+                "question": "What is JSX in React?",
+                "options": [
+                    "A data format used for API responses",
+                    "A new programming language",
+                    "JavaScript XML, a syntax extension for JavaScript",
+                    "A CSS preprocessor"
+                ],
+                "correct_answer": "JavaScript XML, a syntax extension for JavaScript"
+            },
+            {
+                "question": "What is the purpose of props in React?",
+                "options": [
+                    "To hold component's internal state",
+                    "To define the structure of a component",
+                    "To pass data from parent to child components",
+                    "To manage component's lifecycle"
+                ],
+                "correct_answer": "To pass data from parent to child components"
+            },
+            {
+                "question": "Which method is used to change the state of a React component?",
+                "options": [
+                    "setState()",
+                    "changeState()",
+                    "updateState()",
+                    "modifyState()"
+                ],
+                "correct_answer": "setState()"
+            },
+            {
+                "question": "What is the purpose of the 'render' method in a React component?",
+                "options": [
+                    "To update the component's state",
+                    "To modify the component's props",
+                    "To render the component's HTML representation",
+                    "To create a new component instance"
+                ],
+                "correct_answer": "To render the component's HTML representation"
+            },
+            {
+                "question": "In React, what is the purpose of the 'key' prop when rendering a list of elements?",
+                "options": [
+                    "To define the initial state of the component",
+                    "To specify the element's position in the list",
+                    "To uniquely identify each element in the list",
+                    "To apply styles to the element"
+                ],
+                "correct_answer": "To uniquely identify each element in the list"
+            },
+            {
+                "question": "What is the recommended way to update the state in React based on the previous state?",
+                "options": [
+                    "Using the setState() method",
+                    "Directly modifying the state",
+                    "Using the state.update() method",
+                    "Using the prevState parameter in setState()"
+                ],
+                "correct_answer": "Using the prevState parameter in setState()"
+            },
+            {
+                "question": "What is the purpose of React Router?",
+                "options": [
+                    "To manage the state of React components",
+                    "To handle HTTP requests in React",
+                    "To add styling to React components",
+                    "To handle routing and navigation in React applications"
+                ],
+                "correct_answer": "To handle routing and navigation in React applications"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Next JS",
+        "nextjs_questions": [
+            {
+                "question": "What is Next.js?",
+                "options": [
+                    "A JavaScript framework for building web applications",
+                    "A programming language",
+                    "A database management system",
+                    "A front-end CSS framework"
+                ],
+                "correct_answer": "A JavaScript framework for building web applications"
+            },
+            {
+                "question": "What is Server-Side Rendering (SSR) in Next.js?",
+                "options": [
+                    "Rendering a web page on the client side",
+                    "Rendering a web page on the server side and sending the HTML to the client",
+                    "Rendering a web page using a separate rendering server",
+                    "Rendering a web page using a dedicated rendering framework"
+                ],
+                "correct_answer": "Rendering a web page on the server side and sending the HTML to the client"
+            },
+            {
+                "question": "How do you create a new Next.js project?",
+                "options": [
+                    "Using the 'create-react-app' command",
+                    "Using the 'ng new' command",
+                    "Using the 'npm init' command",
+                    "Using the 'create-next-app' command"
+                ],
+                "correct_answer": "Using the 'create-next-app' command"
+            },
+            {
+                "question": "Which file is used to define server-side routing in Next.js?",
+                "options": [
+                    "_router.js",
+                    "_routes.js",
+                    "_server.js",
+                    "pages/api/[...].js"
+                ],
+                "correct_answer": "_router.js"
+            },
+            {
+                "question": "What is the purpose of the 'getStaticProps' function in Next.js?",
+                "options": [
+                    "To define styles for a component",
+                    "To fetch data at build time and pass it to a page component",
+                    "To handle client-side routing",
+                    "To manage state in a component"
+                ],
+                "correct_answer": "To fetch data at build time and pass it to a page component"
+            }
+        ]
+    }
+]

@@ -4,7 +4,7 @@ import { redirect } from "next/navigation";
 
 export default async function Layout({children}) {
     let session = await getServerSession(authOptions);
-    if (session?.user) redirect('/profile');
+    if (session?.user) redirect('/quizboard');
 
     return <>{children}</>
 }

@@ -1,11 +1,15 @@
 'use client'
 import Link from "next/link";
 import { signOut, useSession } from "next-auth/react";
+import { useContext } from "react";
+import { QuizContext } from "@/app/QuizContext/page";
 
 const Navbar = () => {
 
     const {data: session, status} = useSession();
-    // console.log(session);
+
+    const context = useContext(QuizContext);
+    // console.log('context', context);
 
     return (
         <div className="w-full">
