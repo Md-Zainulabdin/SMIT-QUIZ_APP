@@ -2,7 +2,7 @@
     {
         "id": 1,
         "title": "html",
-        "html_questions": [
+        "quiz_questions": [
             {
                 "question": "What does HTML stand for?",
                 "options": [
@@ -158,7 +158,7 @@
     {
         "id": 2,
         "title": "CSS",
-        "css_questions": [
+        "quiz_questions": [
             {
                 "question": "What does CSS stand for?",
                 "options": [
@@ -314,7 +314,7 @@
     {
         "id": 3,
         "title": "JavaScript",
-        "javascript_questions": [
+        "quiz_questions": [
             {
                 "question": "What does JavaScript do?",
                 "options": [
@@ -469,8 +469,8 @@
     },
     {
         "id": 4,
-        "title": "React JS",
-        "react_questions": [
+        "title": "ReactJS",
+        "quiz_questions": [
             {
                 "question": "What is React.js?",
                 "options": [
@@ -575,8 +575,8 @@
     },
     {
         "id": 5,
-        "title": "Next JS",
-        "nextjs_questions": [
+        "title": "NextJS",
+        "quiz_questions": [
             {
                 "question": "What is Next.js?",
                 "options": [

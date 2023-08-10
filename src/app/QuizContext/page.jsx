@@ -7,11 +7,11 @@ export const ContextProvider = (props) => {
 
     const [right, setRight] = useState(0);
     const [wrong, setWrong] = useState(0);
-    const [quizQuestion, setQuizQuestion] = useState('');
+    const [index, setIndex] = useState(0)
 
     return (
         <QuizContext.Provider value={{
-            right, wrong, quizQuestion
+            right, wrong, index, setRight, setWrong, setIndex
         }}>
             {props.children}
         </QuizContext.Provider>
