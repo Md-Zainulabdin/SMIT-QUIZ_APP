@@ -16,7 +16,7 @@ const QuizDashboard = async () => {
                     <h1 className="text-3xl font-medium text-[--primary-color]">Welcome, {session?.user?.name}</h1>
                 </div>
                 <div className="w-full mt-6">
-                    <QuizCard/>
+                    <QuizCard />
                 </div>
             </div>
         </div>

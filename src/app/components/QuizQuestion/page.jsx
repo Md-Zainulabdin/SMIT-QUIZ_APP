@@ -2,16 +2,19 @@
 import { QuizContext } from "@/app/QuizContext/page";
 import { utils } from "@/app/utils/page";
 import { useContext, useEffect } from "react";
+import { useRouter } from "next/navigation";
 
 const QuizQuestions = ({ questions }) => {
 
+    const router = useRouter();
     const Context = useContext(QuizContext);
-    let { right, wrong, index, setRight, setWrong, setIndex } = Context;
+    let { right, wrong, index, setRight, setWrong, setIndex, setTotalMark } = Context;
     const { quiz_questions, title } = questions;
     let options;
 
     useEffect(() => {
         options = document.querySelectorAll('#option');
+        setTotalMark(quiz_questions.length)
     })
 
     const reset = () => {
@@ -40,6 +43,10 @@ const QuizQuestions = ({ questions }) => {
         if (quiz_questions.length !== index + 1) {
             setIndex(index + 1)
         }
+
+        else {
+            router.replace('/results')
+        }
     }
 
     const onSubmitHandler = () => {
@@ -48,7 +55,6 @@ const QuizQuestions = ({ questions }) => {
 
         if (answer === quiz_questions[index]?.correct_answer) {
             setRight((c) => c + 1);
-            console.log(right);
         }
         else {
             setWrong((c) => c + 1);

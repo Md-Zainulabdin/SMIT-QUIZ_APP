@@ -11,12 +11,6 @@ const Navbar = () => {
     const context = useContext(QuizContext);
     let { setRight, setIndex, setWrong } = context;
 
-    (function setGlobalState() {
-        setRight(0);
-        setWrong(0);
-        setIndex(0);
-    })();
-
     return (
         <div className="w-full">
             <nav className="w-full h-[90px] flex items-center justify-between px-[20px] sm:px-[40px] md:px-[60px] border-b">
@@ -24,7 +18,7 @@ const Navbar = () => {
                     <Link href={'/'}><img src="/smit.png" alt="smit logo" className="w-[90px]" /></Link>
                 </div>
                 <div className="menu flex gap-8 items-center">
-                    {(status === 'authenticated') ? <Link href={'/profile'} className="text-xl font-medium">Profile</Link> : null}
+                    {(status === 'authenticated') ? <Link href={'/results'} className="text-xl font-medium">Results</Link> : null}
                     {(status === 'unauthenticated') ? <Link href={'/auth/login'} className="text-xl font-medium text-[--primary-color] border px-6 py-2">Login</Link> : null}
                     {(status === 'authenticated') ? <button onClick={() => signOut()} className="text-xl font-medium text-[--primary-color] border px-6 py-2">Logout</button> : null}
                 </div>
