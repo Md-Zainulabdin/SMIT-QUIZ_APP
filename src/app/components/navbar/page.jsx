@@ -6,16 +6,22 @@ import { QuizContext } from "@/app/QuizContext/page";
 
 const Navbar = () => {
 
-    const {data: session, status} = useSession();
+    const { data: session, status } = useSession();
 
     const context = useContext(QuizContext);
-    // console.log('context', context);
+    let { setRight, setIndex, setWrong } = context;
+
+    (function setGlobalState() {
+        setRight(0);
+        setWrong(0);
+        setIndex(0);
+    })();
 
     return (
         <div className="w-full">
             <nav className="w-full h-[90px] flex items-center justify-between px-[20px] sm:px-[40px] md:px-[60px] border-b">
                 <div className="logo">
-                    <Link href={'/'}><img src="/smit.png" alt="smit logo" className="w-[90px]"/></Link>
+                    <Link href={'/'}><img src="/smit.png" alt="smit logo" className="w-[90px]" /></Link>
                 </div>
                 <div className="menu flex gap-8 items-center">
                     {(status === 'authenticated') ? <Link href={'/profile'} className="text-xl font-medium">Profile</Link> : null}

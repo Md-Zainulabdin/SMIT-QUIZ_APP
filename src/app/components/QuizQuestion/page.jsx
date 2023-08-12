@@ -1,25 +1,61 @@
 'use client'
 import { QuizContext } from "@/app/QuizContext/page";
 import { utils } from "@/app/utils/page";
-import { useContext } from "react";
-import { useRef } from "react";
+import { useContext, useEffect } from "react";
 
 const QuizQuestions = ({ questions }) => {
 
     const Context = useContext(QuizContext);
-    const { right, wrong, index, setRight, setWrong, setIndex } = Context;
+    let { right, wrong, index, setRight, setWrong, setIndex } = Context;
     const { quiz_questions, title } = questions;
-    const optionRef = useRef(null)
+    let options;
 
+    useEffect(() => {
+        options = document.querySelectorAll('#option');
+    })
+
+    const reset = () => {
+        options.forEach(input => input.checked = false);
+    }
+
+    const getAnswer = () => {
+        let answer;
+        options.forEach(
+            (input) => {
+                if (input.checked) {
+                    answer = input.value;
+                }
+            }
+        )
+
+        if (answer === undefined) {
+            alert("Please choose any option")
+        }
+        else {
+            return answer;
+        }
+    }
+
+    const loadQuestions = () => {
+        if (quiz_questions.length !== index + 1) {
+            setIndex(index + 1)
+        }
+    }
 
     const onSubmitHandler = () => {
-        if (quiz_questions.length !== index + 1) {
-            console.log('index', index);
-            setIndex(index + 1);
+        let answer = getAnswer();
+        reset();
 
-            let options = document.querySelectorAll('#option');
-            options.forEach(option => console.log(option.value))
+        if (answer === quiz_questions[index]?.correct_answer) {
+            setRight((c) => c + 1);
+            console.log(right);
         }
+        else {
+            setWrong((c) => c + 1);
+        }
+
+        (answer) ? loadQuestions() : null;
+
 
     }
 
@@ -32,7 +68,7 @@ const QuizQuestions = ({ questions }) => {
                 <div className="row">
                     {quiz_questions[index]?.options.map((option, index) => (
                         <div key={index} className="flex mt-8 gap-4 border px-4 sm:px-8 py-4 rounded-md">
-                            <input type="radio" name="option" id="option" value={option} className="text-2xl cursor-pointer" ref={optionRef}/>
+                            <input type="radio" name="option" id="option" value={option} className="text-2xl cursor-pointer" />
                             <label htmlFor="option" className="text-xl">{option}</label>
                             <br />
                         </div>
@@ -41,6 +77,9 @@ const QuizQuestions = ({ questions }) => {
             </div>
             <div className="submit w-full mt-6 p-4 flex justify-end">
                 <button className={`${utils.hoverableBtn} px-12`} onClick={onSubmitHandler}>Next</button>
+            </div>
+            <div>
+                {right}
             </div>
         </div>
     )
