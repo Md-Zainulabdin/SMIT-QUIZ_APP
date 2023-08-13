@@ -32,8 +32,9 @@ const SignUpForm = () => {
         <div className="w-full h-[100vh] customFlex">
             <div className="w-[80%] md:w-[70%] h-[700px] shadow-md flex border-2">
                 <div className="w-[0%] sm:w-[40%] md:w-[50%] h-full border-r">
-                    <div className="w-full h-full signUpGradient customFlex">
-                        <img src="/smit logo.png" alt="Saylani logo" className="w-[300px]" />
+                    <div className="w-full h-full py-8 signUpGradient flex items-end justify-center">
+                        <img src="/smit logo.png" alt="Saylani logo" className="w-[250px]" />
+                        {/* <h1 className="text-5xl text-center leading-12 text-white font-bold">We Help You To Grow</h1> */}
                     </div>
                 </div>
                 <div className="w-full sm:w-[60%] md:w-[50%] h-full px-8 customFlex flex-col gap-8">

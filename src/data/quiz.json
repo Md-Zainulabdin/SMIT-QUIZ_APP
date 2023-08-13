@@ -628,5 +628,161 @@
                 "correct_answer": "To fetch data at build time and pass it to a page component"
             }
         ]
+    },
+    {
+        "id": 6,
+        "title": "Python",
+        "quiz_questions": [
+            {
+                "question": "What is Python?",
+                "options": [
+                    "A high-level programming language",
+                    "A type of snake",
+                    "A video game",
+                    "A database management system"
+                ],
+                "correct_answer": "A high-level programming language"
+            },
+            {
+                "question": "Which statement is used to create a new function in Python?",
+                "options": [
+                    "def",
+                    "function",
+                    "create",
+                    "new_function"
+                ],
+                "correct_answer": "def"
+            },
+            {
+                "question": "In Python, which data type is used to store a sequence of characters?",
+                "options": [
+                    "number",
+                    "char",
+                    "string",
+                    "text"
+                ],
+                "correct_answer": "string"
+            },
+            {
+                "question": "What is the output of the following Python code?\n```x = 5 y = 2 print(x / y) ```",
+                "options": [
+                    "2.5",
+                    "2.0",
+                    "2",
+                    "2.2"
+                ],
+                "correct_answer": "2.5"
+            },
+            {
+                "question": "What is the purpose of the 'len()' function in Python?",
+                "options": [
+                    "To declare a new variable",
+                    "To convert data types",
+                    "To define the length of a loop",
+                    "To get the length of a sequence or collection"
+                ],
+                "correct_answer": "To get the length of a sequence or collection"
+            },
+            {
+                "question": "Which Python loop is used for iterating over a sequence (such as a list or string)?",
+                "options": [
+                    "do-while loop",
+                    "for loop",
+                    "while loop",
+                    "sequence loop"
+                ],
+                "correct_answer": "for loop"
+            },
+            {
+                "question": "What is the output of the following Python code?\n``` x = [1, 2, 3] x.append(4) print(x) ```",
+                "options": [
+                    "[1, 2, 3, 4]",
+                    "[4, 3, 2, 1]",
+                    "[1, 2, 3]",
+                    "[1, 2, 3, 1]"
+                ],
+                "correct_answer": "[1, 2, 3, 4]"
+            },
+            {
+                "question": "Which Python keyword is used to indicate the end of a function?",
+                "options": [
+                    "finish",
+                    "end",
+                    "stop",
+                    "return"
+                ],
+                "correct_answer": "return"
+            },
+            {
+                "question": "What does the 'range()' function in Python do?",
+                "options": [
+                    "Generates a random number",
+                    "Creates a list of numbers within a specified range",
+                    "Finds the maximum value in a list",
+                    "Calculates the average of a list"
+                ],
+                "correct_answer": "Creates a list of numbers within a specified range"
+            },
+            {
+                "question": "Which operator is used for exponentiation in Python?",
+                "options": [
+                    "**",
+                    "^^",
+                    "//",
+                    "^"
+                ],
+                "correct_answer": "**"
+            },
+            {
+                "question": "What is the result of the following Python code?\n``` x = [1, 2, 3, 4, 5 ] print(x [ 2: 4 ] )```",
+                "options": [
+                    "[2, 3]",
+                    "[3, 4]",
+                    "[1, 2]",
+                    "[4, 5]"
+                ],
+                "correct_answer": "[3, 4]"
+            },
+            {
+                "question": "In Python, what is the purpose of the 'import' keyword?",
+                "options": [
+                    "To create a new variable",
+                    "To import external libraries or modules",
+                    "To define the start of a loop",
+                    "To print text to the console"
+                ],
+                "correct_answer": "To import external libraries or modules"
+            },
+            {
+                "question": "Which method is used to remove an item from a list in Python?",
+                "options": [
+                    "pop()",
+                    "remove()",
+                    "delete()",
+                    "erase()"
+                ],
+                "correct_answer": "pop()"
+            },
+            {
+                "question": "What does the 'if' statement do in Python?",
+                "options": [
+                    "Defines a new function",
+                    "Declares a variable",
+                    "Creates a loop",
+                    "Executes code based on a condition"
+                ],
+                "correct_answer": "Executes code based on a condition"
+            },
+            {
+                "question": "Which built-in function is used to read input from the user in Python?",
+                "options": [
+                    "read()",
+                    "input()",
+                    "get_input()",
+                    "user_input()"
+                ],
+                "correct_answer": "input()"
+            }
+        ]
     }
 ]

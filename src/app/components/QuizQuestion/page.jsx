@@ -2,7 +2,7 @@
 import { QuizContext } from "@/app/QuizContext/page";
 import { utils } from "@/app/utils/page";
 import { useContext, useEffect } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter } from 'next/navigation'
 
 const QuizQuestions = ({ questions }) => {
 
@@ -45,7 +45,7 @@ const QuizQuestions = ({ questions }) => {
         }
 
         else {
-            router.replace('/results')
+            router.push('/quizboard/results')
         }
     }
 
