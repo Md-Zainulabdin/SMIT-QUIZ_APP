@@ -12,9 +12,12 @@ export default function RootLayout({ children, session }) {
     <AuthProvider>
       <html lang="en">
         <ContextProvider>
-          <body>{children}</body>
+          <body>
+            {children}
+            </body>
         </ContextProvider>
       </html>
     </AuthProvider>
   )
 }
+

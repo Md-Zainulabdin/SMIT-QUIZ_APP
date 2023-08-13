@@ -68,14 +68,14 @@ const QuizQuestions = ({ questions }) => {
     return (
         <div className="quiz_questions mt-10">
             <div className="question w-full p-8 border rounded-md">
-                <h2 className="text-2xl text-[--primary-color]">{`${index + 1} -> ${quiz_questions[index]?.question}`}</h2>
+                <h2 className="text-xl sm:text-2xl text-[--primary-color]">{`${index + 1} -> ${quiz_questions[index]?.question}`}</h2>
             </div>
             <div className="options">
                 <div className="row">
                     {quiz_questions[index]?.options.map((option, index) => (
                         <div key={index} className="flex mt-8 gap-4 border px-4 sm:px-8 py-4 rounded-md">
                             <input type="radio" name="option" id="option" value={option} className="text-2xl cursor-pointer" />
-                            <label htmlFor="option" className="text-xl">{option}</label>
+                            <label htmlFor="option" className="text-md sm:text-xl">{option}</label>
                             <br />
                         </div>
                     ))}

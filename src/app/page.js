@@ -1,3 +1,4 @@
+import Footer from "./components/footer/page"
 import Hero from "./components/hero/page"
 import Navbar from "./components/navbar/page"
 
@@ -7,6 +8,7 @@ const Home = () => {
       <Navbar />
       <div className="py-4">
         <Hero />
+        <Footer/>
       </div>
     </div>
   )
