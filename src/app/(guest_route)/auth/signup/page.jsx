@@ -29,8 +29,9 @@ const SignUpForm = () => {
 
 
     return (
-        <div className="w-full h-[100vh] customFlex">
-            <div className="w-[80%] md:w-[70%] h-[700px] shadow-md flex border-2">
+        <div className="w-full h-[100vh] customFlex signUpPageBackground relative">
+            <div className="overlay absolute w-full h-full backdrop-blur-sm bg-white opacity-50"></div>
+            <div className="w-[80%] md:w-[70%] h-[700px] bg-white shadow-md flex border-2 relative z-3">
                 <div className="w-[0%] sm:w-[40%] md:w-[50%] h-full border-r">
                     <div className="w-full h-full py-8 signUpGradient flex items-end justify-center">
                         <img src="/smit logo.png" alt="Saylani logo" className="w-[250px]" />
@@ -42,7 +43,7 @@ const SignUpForm = () => {
                         <h1 className="text-4xl font-semibold text-[--primary-color] mb-8">Sign Up</h1>
                         <hr />
                     </div>
-                    <div className="form w-full">
+                    <div className="form w-ful">
                         <Form login={false} onFormSubmit={onSubmithandler} />
                     </div>
                 </div>

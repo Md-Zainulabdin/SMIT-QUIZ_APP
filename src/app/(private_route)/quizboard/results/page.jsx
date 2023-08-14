@@ -23,20 +23,20 @@ const ResultPage = () => {
                 </div>
 
                 <div className={`circle w-[150px] h-[150px] border-4 customFlex rounded-full ${(percentage > 70) ? 'border-green-500' : 'border-red-500'}`}>
-                    <h1 className={`raleway text-4xl font-medium`}>{`${percentage} %`}</h1>
+                    <h1 className={`raleway text-4xl font-medium ${(percentage > 70) ? 'text-green-500' : 'text-red-500'}`}>{`${percentage} %`}</h1>
                 </div>
 
-                <div className="flex flex-col">
+                <div className="flex flex-col text-center">
                     <div className="p-4 border-t-2">
-                        <h2>Total Question : {totalMark}</h2>
+                        <h2 className="text-xl text-[--primary-black]">Total Question :  {totalMark}</h2>
                     </div>
 
                     <div className="p-4 border-t-2">
-                        <h2>Correct Answer : {right}</h2>
+                        <h2 className="text-xl text-[--primary-black]">Correct Answer :  {right}</h2>
                     </div>
                 </div>
 
-                <Link href='/'><button className={`${utils.button}`} onClick={reset}>Back to Home</button></Link>
+                <Link href='/quizboard'><button className={`${utils.hoverableBtn}`} onClick={reset}>Back to Home</button></Link>
             </div>
         </div>
     )
