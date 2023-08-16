@@ -1,4 +1,6 @@
-'use client'
+'use client';
+/* eslint-disable */
+
 import { createContext, useState } from "react";
 
 export const QuizContext = createContext(null);

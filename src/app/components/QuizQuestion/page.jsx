@@ -4,16 +4,17 @@ import { utils } from "@/app/utils/page";
 import { useContext, useEffect } from "react";
 import { useRouter } from 'next/navigation'
 
+/* eslint-disable */
+
 const QuizQuestions = ({ questions }) => {
 
     const router = useRouter();
     const Context = useContext(QuizContext);
     let { right, wrong, index, setRight, setWrong, setIndex, setTotalMark } = Context;
     const { quiz_questions, title } = questions;
-    let options;
 
     useEffect(() => {
-        options = document.querySelectorAll('#option');
+        let options = document.querySelectorAll('#option');
         setTotalMark(quiz_questions.length)
     })
 

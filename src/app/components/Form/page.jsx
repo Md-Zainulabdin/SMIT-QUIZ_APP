@@ -70,7 +70,7 @@ const Form = ({ login, onFormSubmit }) => {
 
                 {/* <div><span className="text-light text-red-500">Incorrect Password</span></div> */}
 
-                <div className="text-[--primary-color]">{(login) ? <Link href={'/auth/signup'}><span>Don't have Account, SignUp!</span></Link> : <Link href={'/auth/login'}><span>Already Have Account, SignIn!</span></Link>}</div>
+                <div className="text-[--primary-color]">{(login) ? <Link href={`/auth/signup`}><span>Dont have Account, SignUp!</span></Link> : <Link href={`/auth/login`}><span>Already Have Account, SignIn!</span></Link>}</div>
 
                 <div >
                     <button className={`${utils.hoverableBtn} mt-4 w-full`}>{(!login) ? "Create Account" : "Login"}</button>
