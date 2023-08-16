@@ -1,5 +1,4 @@
 'use client';
-/* eslint-disable */
 
 import { createContext, useState } from "react";
 

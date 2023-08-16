@@ -11,7 +11,9 @@ const QuizQuestions = ({ questions }) => {
     const router = useRouter();
     const Context = useContext(QuizContext);
     let { right, wrong, index, setRight, setWrong, setIndex, setTotalMark } = Context;
-    const { quiz_questions, title } = questions;
+    if (questions) {
+        var { quiz_questions, title } = questions;
+    }
 
     useEffect(() => {
         let options = document.querySelectorAll('#option');
