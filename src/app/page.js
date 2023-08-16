@@ -1,3 +1,4 @@
+import Head from "next/head"
 import Footer from "./components/footer/page"
 import Hero from "./components/hero/page"
 import Navbar from "./components/navbar/page"
