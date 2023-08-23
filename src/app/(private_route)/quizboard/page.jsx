@@ -1,6 +1,5 @@
 import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 import QuizCard from "@/app/components/QuizCard/page";
-import Footer from "@/app/components/footer/page";
 import Navbar from "@/app/components/navbar/page";
 import { utils } from "@/utils/page";
 import { getServerSession } from "next-auth";
