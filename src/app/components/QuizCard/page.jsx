@@ -6,11 +6,11 @@ const QuizCard = () => {
   const data = getQuizData();
 
   return (
-    <div className="w-full h-full customflex">
-      <div className="quiz-cards customFlex gap-8 flex-wrap px-2 sm:px-0">
+    <div className="w-full h-full customflex pb-16">
+      <div className="quiz-cards customFlex gap-8 flex-wrap px-2 sm:px-0 py-6">
         {data.map((card) => (
           <div
-            className="w-[100%] md:w-[45%] lg:w-[30%] h-[180px] flex flex-col justify-around border-2 rounded-md p-4 md:p-6"
+            className="w-[100%] md:w-[45%] lg:w-[30%] h-[190px] flex flex-col justify-around border-2 rounded-md p-4 md:p-6"
             key={card?.id}
           >
             <h1 className="text-2xl text-[--primary-black] font-medium">{`${card?.title}`}</h1>
