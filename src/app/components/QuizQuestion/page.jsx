@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useContext, useRef } from "react";
 import { useRouter } from "next/navigation"; // Import the correct module
 import { QuizContext } from "@/QuizContext/page";
@@ -6,7 +6,7 @@ import { utils } from "@/utils/page";
 
 const QuizQuestions = ({ questions }) => {
   const inputEls = useRef([]);
-  const {push} = useRouter(); // Use useRouter instead of next/navigation
+  const { push } = useRouter(); // Use useRouter instead of next/navigation
   const { index, setRight, setWrong, setIndex, setTotalMark } =
     useContext(QuizContext);
 
@@ -89,9 +89,9 @@ const QuizQuestions = ({ questions }) => {
           ))}
         </div>
       </div>
-      <div className="submit w-full mt-6 p-4 flex justify-end">
+      <div className="submit w-full mt-6 p-4 flex justify-end ">
         <button
-          className={`${utils.hoverableBtn} px-12`}
+          className={`${utils.hoverableBtn} px-12 transition duration-300 ease-in-out hover:bg-[--primary-color] hover:text-white hover:border-[--primary-color]`}
           onClick={onSubmitHandler}
         >
           Next
