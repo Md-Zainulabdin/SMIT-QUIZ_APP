@@ -83,7 +83,7 @@ const Form = ({ login, onFormSubmit }) => {
 
             <div >
                 <button className="w-full flex gap-3 items-center border p-3 justify-center" onClick={() => signIn("google")}>
-                    <span className="text-lg font-medium text-[--primary-black]">Login with</span>
+                    <span className="text-lg font-medium text-[--primary-black]">Continue with</span>
                     <FcGoogle className="text-2xl"/>
                 </button>
             </div>

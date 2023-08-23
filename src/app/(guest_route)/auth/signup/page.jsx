@@ -37,7 +37,6 @@ const SignUpForm = () => {
               alt="Saylani logo"
               className="w-[250px]"
             />
-            {/* <h1 className="text-5xl text-center leading-12 text-white font-bold">We Help You To Grow</h1> */}
           </div>
         </div>
         <div className="w-full sm:w-[60%] md:w-[50%] h-full px-8 customFlex flex-col gap-8">
@@ -47,7 +46,7 @@ const SignUpForm = () => {
             </h1>
             <hr />
           </div>
-          <div className="form w-ful">
+          <div className="form w-full">
             <Form login={false} onFormSubmit={onSubmithandler} />
           </div>
         </div>

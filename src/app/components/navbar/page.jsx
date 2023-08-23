@@ -12,7 +12,7 @@ const Navbar = () => {
     let { setRight, setIndex, setWrong } = context;
 
     return (
-        <div className="w-full">
+        <div className="w-full bg-white">
             <nav className="w-full h-[90px] flex items-center justify-between px-[20px] sm:px-[40px] md:px-[60px] border-b">
                 <div className="logo">
                     <Link href={'/'}><img src="/smit.png" alt="smit logo" className="w-[90px]" /></Link>
