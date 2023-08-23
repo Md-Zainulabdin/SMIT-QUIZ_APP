@@ -11,7 +11,7 @@ const QuizId = ({ params }) => {
         <div className="w-full h-screen customFlex">
             <div className={`${utils.paddingX} w-full h-full`}>
                 <div className="header py-6 border-b">
-                    <h1 className="text-3xl md:text-4xl raleway text-[--primary-black]">{questions.title} Quiz</h1>
+                    <h1 className="text-3xl md:text-4xl raleway text-[--primary-black]">{questions?.title} Quiz</h1>
                 </div>
                 <QuizQuestions questions={questions}/>
             </div>

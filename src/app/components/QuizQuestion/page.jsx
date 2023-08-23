@@ -1,20 +1,23 @@
-"use client";
+"use client"
+import { useContext, useRef } from "react";
+import { useRouter } from "next/navigation"; // Import the correct module
 import { QuizContext } from "@/QuizContext/page";
 import { utils } from "@/utils/page";
-import { useContext, useRef } from "react";
-import { useRouter } from "next/navigation";
 
 const QuizQuestions = ({ questions }) => {
   const inputEls = useRef([]);
-  const { push } = useRouter();
+  const {push} = useRouter(); // Use useRouter instead of next/navigation
   const { index, setRight, setWrong, setIndex, setTotalMark } =
     useContext(QuizContext);
+
   if (questions) {
     var { quiz_questions } = questions;
+  } else {
+    var quiz_questions = []; // Initialize quiz_questions if questions is undefined
   }
 
-  var options = inputEls.current;
-  setTotalMark(quiz_questions?.length);
+  const options = inputEls.current;
+  setTotalMark(quiz_questions.length);
 
   const reset = () => {
     options?.forEach((input) => (input.checked = false));
@@ -23,7 +26,7 @@ const QuizQuestions = ({ questions }) => {
   const getAnswer = () => {
     let answer;
     options?.forEach((input) => {
-      if (input.checked) {
+      if (input?.checked) {
         answer = input.value;
       }
     });
@@ -36,16 +39,16 @@ const QuizQuestions = ({ questions }) => {
   };
 
   const loadQuestions = () => {
-    if (quiz_questions?.length !== index + 1) {
+    if (quiz_questions.length !== index + 1) {
       setIndex(index + 1);
     } else {
-      push("/quizboard/results");
+      push("/quizboard/results"); // Use router.push instead of push
     }
   };
 
   const onSubmitHandler = () => {
     let answer = getAnswer();
-    reset();
+    reset(quiz_questions);
 
     if (answer === quiz_questions[index]?.correct_answer) {
       setRight((c) => c + 1);
