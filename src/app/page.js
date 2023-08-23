@@ -9,7 +9,6 @@ const Home = () => {
       <Navbar />
       <div className="py-4">
         <Hero />
-        <Footer/>
       </div>
     </div>
   )

@@ -1,5 +1,5 @@
 import QuizQuestions from "@/app/components/QuizQuestion/page";
-import { utils } from "@/app/utils/page";
+import { utils } from "@/utils/page";
 import { getQuizData } from "@/handlers/handler";
 
 const QuizId = ({ params }) => {

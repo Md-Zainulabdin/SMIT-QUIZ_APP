@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { signOut, useSession } from "next-auth/react";
 import { useContext } from "react";
-import { QuizContext } from "@/app/QuizContext/page";
+import { QuizContext } from "@/QuizContext/page";
 
 const Navbar = () => {
 

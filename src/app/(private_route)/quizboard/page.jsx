@@ -2,7 +2,7 @@ import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 import QuizCard from "@/app/components/QuizCard/page";
 import Footer from "@/app/components/footer/page";
 import Navbar from "@/app/components/navbar/page";
-import { utils } from "@/app/utils/page";
+import { utils } from "@/utils/page";
 import { getServerSession } from "next-auth";
 
 const QuizDashboard = async () => {
@@ -10,7 +10,7 @@ const QuizDashboard = async () => {
     let session = await getServerSession(authOptions);
 
     return (
-        <div className="w-full h-screen">
+        <div className="w-full">
             <Navbar />
             <div className={`parent ${utils.paddingX} h-full flex flex-col justify-start gap-6`}>
                 <div className={`header py-6 border-b`}>
@@ -20,7 +20,6 @@ const QuizDashboard = async () => {
                     <QuizCard />
                 </div>
             </div>
-            <Footer/>
         </div>
     )
 }

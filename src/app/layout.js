@@ -1,6 +1,7 @@
 import AuthProvider from './components/AuthProvider/page';
-import { ContextProvider } from './QuizContext/page'
+import { ContextProvider } from '../QuizContext/page'
 import './globals.css'
+import Footer from './components/footer/page';
 
 export const metadata = {
   title: 'SMIT - Quiz Application',
@@ -17,7 +18,10 @@ export default function RootLayout({ children, session }) {
         <ContextProvider>
           <body>
             {children}
-            </body>
+          </body>
+          <footer>
+            <Footer />
+          </footer>
         </ContextProvider>
       </html>
     </AuthProvider>

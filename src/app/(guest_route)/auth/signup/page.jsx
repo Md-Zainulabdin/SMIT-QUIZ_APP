@@ -3,7 +3,7 @@ import Form from "@/app/components/Form/page";
 import { useRouter } from "next/navigation";
 
 const SignUpForm = () => {
-  const router = useRouter();
+  const {push} = useRouter();
 
   const onSubmithandler = async (username, email, password) => {
     let res = await fetch("/api/users", {
@@ -20,7 +20,7 @@ const SignUpForm = () => {
 
     if (res.ok) {
       alert("Signup Succesfully");
-      router.replace("/auth/login");
+      push("/auth/login");
     }
 
     console.log("res", res);

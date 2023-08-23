@@ -1,4 +1,4 @@
-import { utils } from "@/app/utils/page";
+import { utils } from "@/utils/page";
 import Link from "next/link"
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 

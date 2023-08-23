@@ -1,8 +1,6 @@
 import Link from "next/link";
 import Navbar from "./components/navbar/page";
-import { utils } from "./utils/page";
-
-/* eslint-disable */
+import { utils } from "../utils/page";
 
 const notFound = () => {
     return (

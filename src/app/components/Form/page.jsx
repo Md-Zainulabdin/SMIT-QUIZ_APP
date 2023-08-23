@@ -1,5 +1,5 @@
 'use client'
-import { utils } from "@/app/utils/page";
+import { utils } from "@/utils/page";
 import Link from "next/link";
 import { useState } from "react";
 import { RiEyeLine, RiEyeOffLine } from "react-icons/ri";

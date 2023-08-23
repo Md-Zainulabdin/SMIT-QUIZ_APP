@@ -1,7 +1,7 @@
 'use client'
 import { useContext } from "react";
-import { QuizContext } from "@/app/QuizContext/page";
-import { utils } from "@/app/utils/page";
+import { QuizContext } from "@/QuizContext/page";
+import { utils } from "@/utils/page";
 import Link from "next/link";
 
 const ResultPage = () => {
