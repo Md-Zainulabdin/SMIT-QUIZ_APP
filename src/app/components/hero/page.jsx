@@ -20,7 +20,7 @@ const Hero = () => {
         </p>
         <div className="mt-6">
           <button
-            className={`border-2 px-4 py-2 md:px-6 md:py-3 text-[--primary-color] transition duration-300 ease-in-out hover:bg-[--primary-color] hover:text-white hover:border-[--primary-color]`}
+            className={`border-2 bg-white px-4 py-2 md:px-6 md:py-3 text-[--primary-color] transition duration-300 ease-in-out hover:bg-[--primary-color] hover:text-white hover:border-[--primary-color]`}
           >
             <Link href="/quizboard">Start Your Exam</Link>
           </button>
