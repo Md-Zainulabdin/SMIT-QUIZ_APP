@@ -5,8 +5,7 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <div className={`w-full h-screen customFlex ${utils.paddingX} relative`}>
-        <div className="overlay w-full h-full absolute top-0 left-0 z-0"></div>
-      <div className="hero-text w-[70%] text-center flex flex-col gap-7 relative z-99">
+      <div className="hero-text w-[100%] md:w-[70%] text-center flex flex-col gap-7 relative z-99 py-12 sm:py-0">
         <h1 className="text-4xl md:text-6xl text-[--primary-color] raleway font-bold">
           Quiz Application
         </h1>
