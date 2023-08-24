@@ -4,7 +4,7 @@ import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
 const Footer = () => {
     return (
-        <div className={`border-t ${utils.paddingX} bg-white fixed left-0 bottom-0 w-full p-4 flex justify-between items-center`}>
+        <div className={`footer border-t ${utils.paddingX} absolute left-0 bottom-0 w-full py-2 px-4 flex justify-between items-center`}>
             <div>
                 <h1 className="text-lg text-[--primary-color]">Developed by ~ Zain</h1>
             </div>

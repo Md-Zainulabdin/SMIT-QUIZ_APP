@@ -6,7 +6,7 @@ const Navbar = () => {
   const { data: session, status } = useSession();
 
   return (
-    <div className="w-full bg-white relative z-10">
+    <div className="nav w-full relative z-10">
       <nav className="w-full h-[70px] md:h-[90px] flex items-center justify-between px-[20px] sm:px-[40px] md:px-[60px] border-b">
         <div className="logo">
           <Link href={"/"}>
@@ -18,7 +18,7 @@ const Navbar = () => {
           {status === "unauthenticated" ? (
             <Link
               href={"/auth/login"}
-              className="text-md sm:text-xl font-medium text-[--primary-color] border px-3 py-1 sm:px-6 sm:py-2"
+              className="bg-white rounded-md text-md sm:text-xl font-medium text-[--primary-color] border px-3 py-1 sm:px-6 sm:py-2"
             >
               Login
             </Link>
@@ -26,7 +26,7 @@ const Navbar = () => {
           {status === "authenticated" ? (
             <button
               onClick={() => signOut()}
-              className="text-md sm:text-xl font-medium text-[--primary-color] border px-3 py-1 sm:px-6 sm:py-2"
+              className="bg-white rounded-md text-md sm:text-xl font-medium text-[--primary-color] border px-3 py-1 sm:px-6 sm:py-2"
             >
               Logout
             </button>

@@ -18,7 +18,7 @@ const QuizCard = () => {
               Total questions: {card.quiz_questions.length}
             </span>
             <Link href={`/quizboard/${card?.title}`} className="w-full">
-              <button className={`w-full ${utils.button}`}>
+              <button className={`w-full ${utils.button} transition duration-300 ease-in-out hover:bg-[--primary-color] hover:text-white hover:border-[--primary-color]`}>
                 Click to Start
               </button>
             </Link>

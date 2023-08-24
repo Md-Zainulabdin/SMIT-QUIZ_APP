@@ -27,7 +27,7 @@ const SignUpForm = () => {
   };
 
   return (
-    <div className="w-full h-screen customFlex loginPageBackground relative">
+    <div className="w-full h-screen customFlex signUpPageBackground relative">
       <div className="w-[0%] md:w-[50%] h-full">
         <div className="imgBox w-full h-full py-8 flex justify-center items-end">
           <img src="/smit logo.png" alt="Saylani logo" className="w-[250px]" />
