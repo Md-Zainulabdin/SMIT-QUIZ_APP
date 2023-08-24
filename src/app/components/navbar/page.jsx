@@ -6,7 +6,7 @@ const Navbar = () => {
   const { data: session, status } = useSession();
 
   return (
-    <div className="w-full bg-white">
+    <div className="w-full bg-white relative z-10">
       <nav className="w-full h-[70px] md:h-[90px] flex items-center justify-between px-[20px] sm:px-[40px] md:px-[60px] border-b">
         <div className="logo">
           <Link href={"/"}>
