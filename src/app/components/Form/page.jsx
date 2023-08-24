@@ -19,7 +19,7 @@ const Form = ({ login, onFormSubmit }) => {
     }
 
     return (
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-6 w-full">
             <form action="#" onSubmit={onSubmithandler} className="flex flex-col gap-4">
 
                 {

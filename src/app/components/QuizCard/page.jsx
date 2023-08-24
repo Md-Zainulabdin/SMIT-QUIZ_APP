@@ -6,7 +6,7 @@ const QuizCard = () => {
   const data = getQuizData();
 
   return (
-    <div className="w-full h-full customflex pb-16">
+    <div className="w-full h-full customflex pb-12">
       <div className="quiz-cards customFlex gap-8 flex-wrap px-2 sm:px-0 py-6">
         {data.map((card) => (
           <div

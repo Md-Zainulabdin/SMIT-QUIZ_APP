@@ -3,7 +3,7 @@ import Form from "@/app/components/Form/page";
 import { useRouter } from "next/navigation";
 
 const SignUpForm = () => {
-  const {push} = useRouter();
+  const { push } = useRouter();
 
   const onSubmithandler = async (username, email, password) => {
     let res = await fetch("/api/users", {
@@ -27,28 +27,19 @@ const SignUpForm = () => {
   };
 
   return (
-    <div className="w-full h-[100vh] customFlex signUpPageBackground relative">
-      <div className="overlay absolute w-full h-full backdrop-blur-sm bg-white opacity-50"></div>
-      <div className="w-[80%] md:w-[70%] h-[700px] bg-white shadow-md flex border-2 relative z-3">
-        <div className="w-[0%] sm:w-[40%] md:w-[50%] h-full border-r">
-          <div className="w-full h-full py-8 signUpGradient flex items-end justify-center">
-            <img
-              src="/smit logo.png"
-              alt="Saylani logo"
-              className="w-[250px]"
-            />
-          </div>
+    <div className="w-full h-screen customFlex loginPageBackground relative">
+      <div className="w-[0%] md:w-[50%] h-full">
+        <div className="imgBox w-full h-full py-8 flex justify-center items-end">
+          <img src="/smit logo.png" alt="Saylani logo" className="w-[250px]" />
         </div>
-        <div className="w-full sm:w-[60%] md:w-[50%] h-full px-8 customFlex flex-col gap-8">
-          <div className="w-full text-left">
-            <h1 className="text-4xl font-semibold text-[--primary-color] mb-8">
-              Sign Up
-            </h1>
-            <hr />
-          </div>
-          <div className="form w-full">
-            <Form login={false} onFormSubmit={onSubmithandler} />
-          </div>
+      </div>
+      <div className="w-full md:w-[50%] h-full flex flex-col justify-center items-center sm:block bg-white  backdrop-blur-md py-8 px-4 sm:px-8 shadow-md border-2">
+        <div className="w-full md:w-[90%] h-full flex flex-col items-start justify-center">
+          <h1 className="text-4xl font-medium text-[--primary-color]">
+            Sign Up
+          </h1>
+          <hr className="my-7" />
+          <Form login={false} onFormSubmit={onSubmithandler} />
         </div>
       </div>
     </div>
