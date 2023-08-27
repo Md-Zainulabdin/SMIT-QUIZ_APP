@@ -8,7 +8,7 @@ const Home = () => {
       <Navbar />
       <div className="w-full h-full bg-image py-12 md:py-0 relative md:absolute left-0 top-0">
         <Hero />
-        <Footer/>
+        <Footer />
       </div>
     </div>
   )

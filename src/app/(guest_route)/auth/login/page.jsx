@@ -1,18 +1,17 @@
 'use client'
 import Form from "@/app/components/Form/page";
-import Navbar from "@/app/components/navbar/page";
 import { signIn } from 'next-auth/react'
 import { useRouter } from "next/navigation";
 
 const LoginForm = () => {
-    const {push} = useRouter()
+    const {replace} = useRouter()
 
     const onsubmitHandler = async (username, email, password) => {
         const data = await signIn("credentials", { redirect: false, email, password });
 
         if (data.ok && data.error === null) {
             alert("Sucessfully Login");
-            push('/quizboard')
+            replace('/quizboard')
         }
     }
 
